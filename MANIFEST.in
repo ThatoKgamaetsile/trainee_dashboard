@@ -1,0 +1,4 @@
+include AUTHORS CHANGES README.md LICENCE
+recursive-include trainee_dashboard/templates *
+recursive-include trainee_dashboard/static *
+recursive-exclude etc/*
