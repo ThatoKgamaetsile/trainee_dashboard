@@ -18,7 +18,7 @@ setup(
     author_email='tkgamaetsile@bhp.org.bw',
     packages=find_packages(),
     include_package_data=True,
-    url='https://github.com/ThatoKgamaetsile/trainee-dashboard',
+    url='https://github.com/ThatoKgamaetsile/trainee_dashboard',
     license='GPL license, see LICENSE',
     description='pivoted reference model for edc modules',
     long_description=README,

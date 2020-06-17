@@ -2,7 +2,7 @@ Metadata-Version: 1.1
 Name: trainee-dashboard
 Version: 0.1.0
 Summary: pivoted reference model for edc modules
-Home-page: https://github.com/ThatoKgamaetsile/trainee-dashboard
+Home-page: https://github.com/ThatoKgamaetsile/trainee_dashboard
 Author: BHP Software Engineering & Data Management Center
 Author-email: tkgamaetsile@bhp.org.bw
 License: GPL license, see LICENSE
