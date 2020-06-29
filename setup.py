@@ -12,7 +12,7 @@ with open(os.path.join(os.path.dirname(__file__), 'README.md')) as readme:
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
-    name='trainee-dashboard',
+    name='trainee_dashboard',
     version='0.1.0',
     author=u'BHP Software Engineering & Data Management Center',
     author_email='tkgamaetsile@bhp.org.bw',

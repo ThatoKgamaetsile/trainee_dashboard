@@ -18,8 +18,8 @@ if settings.APP_NAME == 'trainee_dashboard':
     class EdcAppointmentAppConfig(BaseEdcAppointmentAppConfig):
         configurations = [
             AppointmentConfig(
-                model='cancer_subject.appointment',
-                related_visit_model='cancer_dashboard.subjectvisit',
+                model='trainee_subject.appointment',
+                related_visit_model='trainee_dashboard.subjectvisit',
                 appt_type='hospital')]
 
     class EdcFacilityAppConfig(BaseEdcFacilityAppConfig):
@@ -29,5 +29,3 @@ if settings.APP_NAME == 'trainee_dashboard':
                                  slots=[100, 100, 100, 100, 100, 100, 100]),
             '5-day clinic': dict(days=[MO, TU, WE, TH, FR],
                                  slots=[100, 100, 100, 100, 100])}
-
-

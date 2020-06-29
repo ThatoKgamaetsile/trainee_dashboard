@@ -45,6 +45,3 @@ class SubjectScreeningModelWrapper(subjectLocatorModelWrapperMixin, ModelWrapper
         options = dict(
             subject_identifier=self.subject_identifier)
         return options
-
-
-
