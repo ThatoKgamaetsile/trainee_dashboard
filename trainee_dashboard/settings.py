@@ -170,8 +170,8 @@ LABEL_PRINTER = 'label_printer'
 
 
 DASHBOARD_URL_NAMES = {
-    'subject_listboard_url': 'trainee_dashboard:subject_listboard_url',
     'screening_listboard_url': 'trainee_dashboard:screening_listboard_url',
+    'subject_listboard_url': 'trainee_dashboard:subject_listboard_url',
     'subject_dashboard_url': 'trainee_dashboard:subject_dashboard_url',
     'data_manager_listboard_url': 'edc_data_manager:data_manager_listboard_url',
 }
