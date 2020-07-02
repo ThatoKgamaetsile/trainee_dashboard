@@ -10,7 +10,7 @@ from .subject_locator_wrapper_mixin import subjectLocatorModelWrapperMixin
 class SubjectScreeningModelWrapper(subjectLocatorModelWrapperMixin, ModelWrapper):
 
     model = 'trainee_subject.subjectscreening'
-    next_url_attrs = ['subject_identifier']
+    next_url_attrs = ['screening_identifier']
     next_url_name = settings.DASHBOARD_URL_NAMES.get(
         'subject_dashboard_url')
 
@@ -34,7 +34,7 @@ class SubjectScreeningModelWrapper(subjectLocatorModelWrapperMixin, ModelWrapper
         unpersisted trainee subject screening model instance.
         """
         options = dict(
-            subject_identifier=self.subject_identifier)
+            screening_identifier=self.screening_identifier)
         return options
 
     @property
@@ -43,5 +43,5 @@ class SubjectScreeningModelWrapper(subjectLocatorModelWrapperMixin, ModelWrapper
         subject screening model instance.
         """
         options = dict(
-            subject_identifier=self.subject_identifier)
+            screening_identifier=self.screening_identifier)
         return options
