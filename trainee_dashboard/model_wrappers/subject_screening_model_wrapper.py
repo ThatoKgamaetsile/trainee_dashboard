@@ -29,6 +29,14 @@ class SubjectScreeningModelWrapper(subjectLocatorModelWrapperMixin, ModelWrapper
         return django_apps.get_model('trainee_subject.subjectscreening')
 
     @property
+    def subject_screening(self):
+        """Returns a wrapped saved or unsaved subject screening.
+        """
+        model_obj = self.subject_screening_model_obj or self.subject_screening_cls(
+            **self.create_subject_screening_options)
+        return SubjectScreeningModelWrapper(model_obj=model_obj)
+
+    @property
     def create_subject_screening_options(self):
         """Returns a dictionary of options to create a new
         unpersisted trainee subject screening model instance.
