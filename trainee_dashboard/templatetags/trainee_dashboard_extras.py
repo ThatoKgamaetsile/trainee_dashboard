@@ -41,4 +41,4 @@ def dashboard_button(model_wrapper):
         'subject_dashboard_url')
     return dict(
         subject_dashboard_url=subject_dashboard_url,
-        subject_identifier=model_wrapper.subject_identifier)
+        screening_identifier=model_wrapper.screening_identifier)
