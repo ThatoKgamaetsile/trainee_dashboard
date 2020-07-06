@@ -25,6 +25,16 @@ class SubjectScreeningModelWrapper(subjectLocatorModelWrapperMixin, ModelWrapper
             return None
 
     @property
+    def subject_identifier(self):
+        """Returns a subject identifier.
+        """
+        try:
+            return self.subject_screening_cls.objects.get(
+                subject_identifier=self.subject_identifier)
+        except ObjectDoesNotExist:
+            return None
+
+    @property
     def subject_screening_cls(self):
         return django_apps.get_model('trainee_subject.subjectscreening')
 
