@@ -7,12 +7,14 @@ from edc_model_wrapper import ModelWrapper
 from .subject_locator_wrapper_mixin import subjectLocatorModelWrapperMixin
 
 
-class SubjectScreeningModelWrapper(subjectLocatorModelWrapperMixin, ModelWrapper):
+class SubjectScreeningModelWrapper(subjectLocatorModelWrapperMixin,
+                                   ModelWrapper):
 
     model = 'trainee_subject.subjectscreening'
+    querystring_attrs = ['screening_identifier']
     next_url_attrs = ['screening_identifier']
     next_url_name = settings.DASHBOARD_URL_NAMES.get(
-        'subject_dashboard_url')
+        'screening_dashboard_url')
 
     @property
     def subject_screening_model_obj(self):
