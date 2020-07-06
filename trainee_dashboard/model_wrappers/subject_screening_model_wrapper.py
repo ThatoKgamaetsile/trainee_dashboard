@@ -13,7 +13,7 @@ class SubjectScreeningModelWrapper(subjectLocatorModelWrapperMixin,
     model = 'trainee_subject.subjectscreening'
     querystring_attrs = ['screening_identifier']
     next_url_attrs = ['screening_identifier']
-    next_url_name = settings.DASHBOARD_URL_NAMES.get('screening_dashboard_url')
+    next_url_name = settings.DASHBOARD_URL_NAMES.get('screening_listboard_url')
 
     @property
     def subject_screening_model_obj(self):
