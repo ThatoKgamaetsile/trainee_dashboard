@@ -31,7 +31,6 @@ def consent_button(model_wrapper):
     return dict(
         screening_identifier=model_wrapper.object.screening_identifier,
         add_consent_href=model_wrapper.href,
-        consent_version=consent_version,
         title=' '.join(title))
 
 
