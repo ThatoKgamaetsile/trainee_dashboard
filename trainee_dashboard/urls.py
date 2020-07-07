@@ -14,12 +14,14 @@ subject_listboard_url_config = UrlConfig(
     label='subject_listboard',
     identifier_label='subject_identifier',
     identifier_pattern=subject_identifier)
+
 screening_listboard_url_config = UrlConfig(
     url_name='screening_listboard_url',
     view_class=ScreeningListboardView,
     label='screening_listboard',
     identifier_label='screening_identifier',
     identifier_pattern=screening_identifier)
+
 subject_dashboard_url_config = UrlConfig(
     url_name='subject_dashboard_url',
     view_class=SubjectDashboardView,

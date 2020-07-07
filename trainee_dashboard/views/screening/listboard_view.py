@@ -25,7 +25,7 @@ class ListBoardView(NavbarViewMixin, EdcBaseViewMixin,
     listboard_view_filters = ListboardViewFilters()
     model = 'trainee_subject.subjectscreening'
     model_wrapper_cls = SubjectScreeningModelWrapper
-    app_config_name = 'trainee_dashboard'
+#    app_config_name = 'trainee_dashboard'
     navbar_name = 'trainee_dashboard'
     navbar_selected_item = 'screened_subject'
     ordering = '-modified'
